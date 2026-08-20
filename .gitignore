@@ -1,0 +1,53 @@
+# ==============================================================================
+# Git Ignore - IA Local Project
+# ==============================================================================
+
+# Entornos virtuales y runtimes de Python/Node
+.venv/
+venv/
+openwebui_env/
+python_runtimes/
+node_dist/
+ollama_dist/
+uv_cache/
+cargo/
+bin/
+
+# Modelos y pesos de IA (pesados)
+models/
+*.bin
+*.gguf
+*.safetensors
+*.tar.zst
+*.tgz
+*.tar.gz
+
+# Datos persistentes de aplicaciones y bases de datos
+data/
+data/n8n/
+data/openwebui/
+home/
+hermes_home/
+hermes_agent_official/
+
+# Logs y archivos temporales
+logs/
+*.log
+*.tmp
+*.temp
+
+# Claves, secretos y variables de entorno sensibles
+.env
+.env.local
+.webui_secret_key
+*.key
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de instalación temporales
+get-pip.py
+install.sh
+ollama-linux-amd64.tgz
